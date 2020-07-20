@@ -158,3 +158,9 @@ Text Domain: dstearle
         padding: 15px;
         border: #ccc 1px solid;
     }
+
+    .post-thumb img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 8px;
+    }

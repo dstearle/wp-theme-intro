@@ -77,6 +77,13 @@
 								<!-- Post Content -->
 								<?php the_excerpt(); ?>
 
+								<!-- Post Thumbnail -->
+								<?php if(has_post_thumbnail()) : ?>
+
+									<div class="post-thumb"><?php the_post_thumbnail(); ?></div>
+
+								<?php endif; ?>
+
 							</div>
 
 						<?php endwhile; ?>

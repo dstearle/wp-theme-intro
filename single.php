@@ -63,11 +63,7 @@
 								<!-- Post Title -->
 								<h2 class="blog-post-title">
 
-									<a href="<?php the_permalink(); ?>">
-
-										<?php the_title(); ?>
-
-									</a>
+                                    <?php the_title(); ?>
 
 								</h2>
 
@@ -77,12 +73,17 @@
 								<!-- Post Thumbnail -->
 								<?php if(has_post_thumbnail()) : ?>
 
-									<div class="post-thumb"><?php the_post_thumbnail(); ?></div>
+                                    <div class="post-thumb"><?php the_post_thumbnail(); ?></div>
 
-								<?php endif; ?>
+                                <?php endif; ?>
+                                
+                                <!-- Post Content -->
+								<?php the_content(); ?>
 
-								<!-- Post Content -->
-								<?php the_excerpt(); ?>
+                                <hr>
+
+                                <!-- Comments Section -->
+                                <?php comments_template(); ?>
 
 							</div>
 

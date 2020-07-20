@@ -61,7 +61,15 @@
 							<div class="blog-post">
 
 								<!-- Post Title -->
-								<h2 class="blog-post-title"><?php the_title(); ?></h2>
+								<h2 class="blog-post-title">
+
+									<a href="<?php the_permalink(); ?>">
+
+										<?php the_title(); ?>
+
+									</a>
+
+								</h2>
 
 								<!-- Post Date & Author -->
 								<p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>

@@ -72,7 +72,7 @@
 								</h2>
 
 								<!-- Post Date & Author -->
-								<p class="blog-post-meta"><?php the_date(); ?> <a href="#"><?php the_author(); ?></a></p>
+								<p class="blog-post-meta"><?php the_date(); ?> <a href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>"><?php the_author(); ?></a></p>
 
 								<!-- Post Content -->
 								<?php the_excerpt(); ?>

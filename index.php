@@ -72,7 +72,7 @@
 								</h2>
 
 								<!-- Post Date & Author -->
-								<p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
+								<p class="blog-post-meta"><?php the_date(); ?> <a href="#"><?php the_author(); ?></a></p>
 
 								<!-- Post Content -->
 								<?php the_excerpt(); ?>

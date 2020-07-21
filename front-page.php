@@ -85,3 +85,97 @@
             </div>
 
         </nav>
+
+        <!-- Showcase -->
+        <section class="showcase">
+
+            <div class="container">
+
+                <h1>Custom WP Bootstrap Theme</h1>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam cumque distinctio perspiciatis at incidunt fuga praesentium facere dolore ut natus.</p>
+
+                <a href="" class="btn btn-lg btn-primary">Read More</a>
+
+            </div>
+
+        </section>
+
+        <!-- Boxes -->
+        <section class="boxes">
+
+            <div class="container">
+                
+                <div class="row">
+
+                    <!-- Box 1 -->
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <i class="fa fa-users" aria-hidden="true"></i>
+
+                            <h3>Lorem ipsum dolor.</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, enim consectetur ipsam nisi itaque similique.</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <i class="fa fa-gears" aria-hidden="true"></i>
+
+                            <h3>Lorem ipsum dolor.</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, enim consectetur ipsam nisi itaque similique.</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="col-md-4">
+
+                        <div class="box">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                            <h3>Lorem ipsum dolor.</h3>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, enim consectetur ipsam nisi itaque similique.</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="blog-footer">
+
+            <p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
+
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+
+        </footer>
+
+        <?php wp_footer(); ?>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
+
+    </body>
+
+</html>

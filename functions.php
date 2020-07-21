@@ -34,6 +34,7 @@
 	// Widget Locations
 	function wpb_init_widgets($id) {
 
+		// Sidebar Widget
 		register_sidebar(
 			array(
 				'name' => 'Sidebar',
@@ -42,6 +43,42 @@
 				'after_widget' => '</div>',
 				'before_title' => '<h4>',
 				'after_title' => '</h4>'
+			)
+		);
+
+		// Box1 Widget
+		register_sidebar(
+			array(
+				'name' => 'Box1',
+				'id' => 'box1',
+				'before_widget' => '',
+				'after_widget' => '',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>'
+			)
+		);
+
+		// Box2 Widget
+		register_sidebar(
+			array(
+				'name' => 'Box2',
+				'id' => 'box2',
+				'before_widget' => '',
+				'after_widget' => '',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>'
+			)
+		);
+
+		// Box3 Widget
+		register_sidebar(
+			array(
+				'name' => 'Box3',
+				'id' => 'box3',
+				'before_widget' => '',
+				'after_widget' => '',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>'
 			)
 		);
 

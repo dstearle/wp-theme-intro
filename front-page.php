@@ -111,46 +111,34 @@
                     <!-- Box 1 -->
                     <div class="col-md-4">
 
-                        <div class="box">
+                        <?php if(is_active_sidebar('box1')) : ?>
 
-                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <?php dynamic_sidebar('box1'); ?>
 
-                            <h3>Lorem ipsum dolor.</h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, enim consectetur ipsam nisi itaque similique.</p>
-
-                        </div>
+                        <?php endif; ?>
 
                     </div>
 
                     <!-- Box 2 -->
                     <div class="col-md-4">
 
-                        <div class="box">
+                        <?php if(is_active_sidebar('box2')) : ?>
 
-                            <i class="fa fa-gears" aria-hidden="true"></i>
+                            <?php dynamic_sidebar('box2'); ?>
 
-                            <h3>Lorem ipsum dolor.</h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, enim consectetur ipsam nisi itaque similique.</p>
-
-                        </div>
+                        <?php endif; ?>
 
                     </div>
 
                     <!-- Box 3 -->
                     <div class="col-md-4">
 
-                        <div class="box">
+                        <?php if(is_active_sidebar('box3')) : ?>
 
-                            <i class="fa fa-search" aria-hidden="true"></i>
+                            <?php dynamic_sidebar('box3'); ?>
 
-                            <h3>Lorem ipsum dolor.</h3>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, enim consectetur ipsam nisi itaque similique.</p>
-
-                        </div>
-
+                        <?php endif; ?>
+                        
                     </div>
 
                 </div>

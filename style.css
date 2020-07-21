@@ -218,3 +218,16 @@ Text Domain: dstearle
     li.comment {
         list-style: none;
     }
+
+    /* Gallery Posts */
+
+    .post-gallery {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .post-gallery h2 {
+        color: #fff;
+    }

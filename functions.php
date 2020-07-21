@@ -11,7 +11,11 @@
 	// Theme Support
 	function wpb_theme_setup() {
 
+		// Post Thumbnails
 		add_theme_support('post-thumbnails');
+
+		// Post Formats
+		add_theme_support('post-formats', array('aside', 'gallery'));
 
 	}
 

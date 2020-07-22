@@ -91,11 +91,21 @@
 
             <div class="container">
 
-                <h1>Custom WP Bootstrap Theme</h1>
+                <!-- Header -->
+                <h1>
+                        
+                    <?php echo get_theme_mod("showcase_heading", "Custom WP Bootstrap Theme"); ?>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam cumque distinctio perspiciatis at incidunt fuga praesentium facere dolore ut natus.</p>
+                </h1>
 
-                <a href="" class="btn btn-lg btn-primary">Read More</a>
+                <!-- Text -->
+                <p><?php echo get_theme_mod("showcase_text", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam cumque distinctio perspiciatis at incidunt fuga praesentium facere dolore ut natus."); ?></p>
+
+                <a href="" class="btn btn-lg btn-primary">
+                
+                    <?php echo get_theme_mod("btn_text", "Read More"); ?>
+
+                </a>
 
             </div>
 
@@ -138,7 +148,7 @@
                             <?php dynamic_sidebar('box3'); ?>
 
                         <?php endif; ?>
-                        
+
                     </div>
 
                 </div>

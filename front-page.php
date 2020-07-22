@@ -27,6 +27,14 @@
         
         <?php wp_head(); ?>
 
+        <style>
+
+            .showcase {
+                background: url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+            }
+
+        </style>
+
     </head>
 
     <body>
@@ -85,3 +93,95 @@
             </div>
 
         </nav>
+
+        <!-- Showcase -->
+        <section class="showcase">
+
+            <div class="container">
+
+                <!-- Header -->
+                <h1>
+                        
+                    <?php echo get_theme_mod("showcase_heading", "Custom WP Bootstrap Theme"); ?>
+
+                </h1>
+
+                <!-- Text -->
+                <p><?php echo get_theme_mod("showcase_text", "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam cumque distinctio perspiciatis at incidunt fuga praesentium facere dolore ut natus."); ?></p>
+
+                <a href="" class="btn btn-lg btn-primary">
+                
+                    <?php echo get_theme_mod("btn_text", "Read More"); ?>
+
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Boxes -->
+        <section class="boxes">
+
+            <div class="container">
+                
+                <div class="row">
+
+                    <!-- Box 1 -->
+                    <div class="col-md-4">
+
+                        <?php if(is_active_sidebar('box1')) : ?>
+
+                            <?php dynamic_sidebar('box1'); ?>
+
+                        <?php endif; ?>
+
+                    </div>
+
+                    <!-- Box 2 -->
+                    <div class="col-md-4">
+
+                        <?php if(is_active_sidebar('box2')) : ?>
+
+                            <?php dynamic_sidebar('box2'); ?>
+
+                        <?php endif; ?>
+
+                    </div>
+
+                    <!-- Box 3 -->
+                    <div class="col-md-4">
+
+                        <?php if(is_active_sidebar('box3')) : ?>
+
+                            <?php dynamic_sidebar('box3'); ?>
+
+                        <?php endif; ?>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="blog-footer">
+
+            <p>&copy; <?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></p>
+
+            <p>
+                <a href="#">Back to top</a>
+            </p>
+
+        </footer>
+
+        <?php wp_footer(); ?>
+
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
+
+    </body>
+
+</html>

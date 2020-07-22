@@ -34,6 +34,7 @@
 	// Widget Locations
 	function wpb_init_widgets($id) {
 
+		// Sidebar Widget
 		register_sidebar(
 			array(
 				'name' => 'Sidebar',
@@ -45,8 +46,47 @@
 			)
 		);
 
+		// Box1 Widget
+		register_sidebar(
+			array(
+				'name' => 'Box1',
+				'id' => 'box1',
+				'before_widget' => '',
+				'after_widget' => '',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>'
+			)
+		);
+
+		// Box2 Widget
+		register_sidebar(
+			array(
+				'name' => 'Box2',
+				'id' => 'box2',
+				'before_widget' => '',
+				'after_widget' => '',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>'
+			)
+		);
+
+		// Box3 Widget
+		register_sidebar(
+			array(
+				'name' => 'Box3',
+				'id' => 'box3',
+				'before_widget' => '',
+				'after_widget' => '',
+				'before_title' => '<h3>',
+				'after_title' => '</h3>'
+			)
+		);
+
 	}
 
 	add_action('widgets_init', 'wpb_init_widgets');
+
+	// Customizer File
+	require get_template_directory(). '/inc/customizer.php';
 
 ?>
